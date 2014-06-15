@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+	<title>Videos Responsive Design</title>
+	<style>
+		body{
+			font-family: Arial;
+		}
+
+		#wrapper {
+			max-width: 1000px;
+			margin: auto;
+		}
+		.col1,
+		.col2{
+			width: 50%;
+			float: left;
+		}
+
+		/*Pone el video en proporcion 16:9*/
+		.contenedor {
+			height: 0;
+			overflow: hidden;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			position: relative;
+		}
+		.contenedor iframe,
+		.contenedor object,
+		.contenedor embed,
+		.contenedor video {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;			
+		}
+		@media screen and (max-width: 1000px)
+		{
+			.col1,
+			.col2{
+				width: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="col1">
+			<h1>Video Responsive Design con @JuanCarlosValdes</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		<div class="col2">
+			<h2>Aprende Stylus</h2>
+			<div class="contenedor">
+				<iframe width="640" height="390" src="//www.youtube.com/embed/KOLqHMdnFc8" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
